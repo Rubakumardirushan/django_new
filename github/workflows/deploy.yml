@@ -16,7 +16,7 @@ jobs:
     - name: Deploy to EC2
       env:
         PRIVATE_KEY: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
-        HOST: "your-ec2-public-ip"
+        HOST: "54.152.186.172"
         USER: "ubuntu"
       run: |
         echo "$PRIVATE_KEY" > private_key.pem
